@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  flex: 1;
+  padding: 10px;
+  min-width: 100px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: #e8f5e9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}

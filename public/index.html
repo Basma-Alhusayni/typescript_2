@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Budget Tracker</h1>
+
+      <!-- Income Section -->
+      <section>
+        <h2>Add Income</h2>
+        <form id="income-form">
+          <input type="text" id="income-source" placeholder="Source" required />
+          <input
+            type="number"
+            id="income-value"
+            placeholder="Value"
+            min="0"
+            required
+          />
+          <input type="date" id="income-date" required />
+          <button type="submit">Add Income</button>
+        </form>
+        <ul id="income-list"></ul>
+      </section>
+
+      <!-- Expense Section -->
+      <section>
+        <h2>Add Expense</h2>
+        <form id="expense-form">
+          <input
+            type="text"
+            id="expense-source"
+            placeholder="Source"
+            required
+          />
+          <input
+            type="number"
+            id="expense-value"
+            placeholder="Value"
+            min="0"
+            required
+          />
+          <input type="date" id="expense-date" required />
+          <button type="submit">Add Expense</button>
+        </form>
+        <ul id="expense-list"></ul>
+      </section>
+
+      <!-- Savings Section -->
+      <section>
+        <h2>Saving Target</h2>
+        <form id="saving-form">
+          <input
+            type="text"
+            id="saving-name"
+            placeholder="Saving Target"
+            required
+          />
+          <input
+            type="number"
+            id="saving-amount"
+            placeholder="Saving Amount"
+            min="0"
+            required
+          />
+          <button type="submit">Add Saving</button>
+        </form>
+        <ul id="saving-list"></ul>
+      </section>
+    </div>
+
+    <script src="../build/index.js"></script>
+  </body>
+</html>
